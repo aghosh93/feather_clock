@@ -2,9 +2,9 @@
 
 ## Description
 
-This project is a simple implementation of displaying a clock using some staple Adafruit components. 
+This project is a simple implementation of displaying a clock using some staple Adafruit components.
 
-### Compoents 
+### Compoents
 
 - [Adafruit HUZZAH32 – ESP32 Feather Board](https://www.adafruit.com/product/3619)
 - [Adafruit 0.56" 4-Digit 7-Segment Display w/ FeatherWing](https://www.adafruit.com/product/3109)
