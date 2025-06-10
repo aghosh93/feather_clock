@@ -10,7 +10,7 @@
 #define DUBUG_FLAG 1
 
 // Clock settings
-const char *ntpServer = "pool.ntp.org";
+const char *ntpServer = "time.nist.gov";
 const long gmtOffset_sec = -18000;
 const int daylightOffset_sec = 3600;
 
