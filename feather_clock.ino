@@ -1,4 +1,5 @@
 #include <dummy.h>
+#include "arduino_secrets.h"
 
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
 #include <WiFi.h>
@@ -7,10 +8,6 @@
 #include "time.h"
 
 #define DUBUG_FLAG 1
-
-// WiFi settings
-const char *ssid = "<INSERT_SSID_HERE>";
-const char *password = "<INSERT_PASSWORD_HERE>";
 
 // Clock settings
 const char *ntpServer = "pool.ntp.org";
@@ -71,14 +68,14 @@ void getAndDisplayLocalTime()
 void getTimeFromNTP()
 {
   // Connect to WiFi
-  Serial.printf("Connecting to %s\n", ssid);
-  WiFi.begin(ssid, password);
+  Serial.printf("Connecting to %s\n", SECRET_WIFI_SSID);
+  WiFi.begin(SECRET_WIFI_SSID, SECRET_WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED)
   {
     delay(500);
     Serial.println(".");
   }
-  Serial.printf("Connected to %s\n", ssid);
+  Serial.printf("Connected to %s\n", SECRET_WIFI_SSID);
 
   //Get time from NTP
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);

@@ -4,6 +4,10 @@
 
 This project is a simple implementation of displaying a clock using some staple Adafruit components.
 
+### Secrets
+
+The secrets are saved under arduino_secrets.h. You can copy over the example file and insert your secrets accordingly.
+
 ### Compoents
 
 - [Adafruit HUZZAH32 – ESP32 Feather Board](https://www.adafruit.com/product/3619)
